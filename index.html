@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PLACEHOLDER_PAGE_TITLE</title>
+<style>
+  :root {
+    --bg: #faf9f6;
+    --ink: #1a1a1a;
+    --muted: #6b6b6b;
+    --accent: #2b4c3f;
+    --accent-hover: #1d372e;
+    --max-width: 720px;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    padding: 48px 24px 80px;
+  }
+
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+
+  p.subtitle {
+    color: var(--muted);
+    margin: 0 0 40px;
+    font-size: 1.05rem;
+  }
+
+  .video-wrap {
+    position: relative;
+    width: 100%;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 48px;
+  }
+
+  video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+
+  .images img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+  }
+
+  @media (max-width: 480px) {
+    .images {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .cta {
+    text-align: center;
+  }
+
+  .cta a {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 14px 32px;
+    border-radius: 6px;
+    transition: background 0.15s ease;
+  }
+
+  .cta a:hover {
+    background: var(--accent-hover);
+  }
+
+  .cta a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>PLACEHOLDER_HEADLINE</h1>
+  <p class="subtitle">PLACEHOLDER_SUBTITLE_OR_DESCRIPTION</p>
+
+  <!--
+    VIDEO:
+    Replace the src URL below with your GitHub Release asset link
+    e.g. https://github.com/yourusername/yourrepo/releases/download/v1/yourvideo.mp4
+  -->
+  <div class="video-wrap">
+    <video controls preload="metadata" poster="PLACEHOLDER_POSTER_IMAGE_URL.jpg">
+      <source src="PLACEHOLDER_VIDEO_URL.mp4" type="video/mp4">
+      Your browser doesn't support embedded video.
+      <a href="PLACEHOLDER_VIDEO_URL.mp4">Download the video instead.</a>
+    </video>
+  </div>
+
+  <!-- IMAGES: replace src with your own image filenames/URLs -->
+  <div class="images">
+    <img src="PLACEHOLDER_IMAGE_1.jpg" alt="PLACEHOLDER_IMAGE_1_DESCRIPTION">
+    <img src="PLACEHOLDER_IMAGE_2.jpg" alt="PLACEHOLDER_IMAGE_2_DESCRIPTION">
+  </div>
+
+  <!-- AMAZON LINK: replace href with your actual product/link URL -->
+  <div class="cta">
+    <a href="PLACEHOLDER_AMAZON_URL" target="_blank" rel="noopener noreferrer">PLACEHOLDER_BUTTON_TEXT</a>
+  </div>
+
+</main>
+</body>
+</html>
